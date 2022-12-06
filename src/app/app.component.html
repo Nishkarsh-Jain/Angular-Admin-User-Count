@@ -1,4 +1,49 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h2>Parent</h2>
+<div class="row">
+  <div class="col parentBox">
+    <h2>User</h2>
+    <table>
+      <tr>
+        <th>User Name:</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let user of users; index as i">
+        <td>{{ user }}</td>
+        <td class="rmv_link" (click)="onRemoveUser(i)">Remove</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col parentBox">
+    <h2>Admin</h2>
+    <table>
+      <tr>
+        <th>User Name:</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let admin of admins; index as i">
+        <td>{{ admin }}</td>
+        <td class="rmv_link" (click)="onRemoveAdmin(i)">Remove</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<hr style="" />
+<h2>Child</h2>
+<div class="row">
+  <div class="col childBox">
+    <app-child
+      [boxColor]="'green'"
+      [placeholderText]="'Create User'"
+      (inputEvent)="getUser($event)"
+      [removeCount]="tUser"
+    ></app-child>
+  </div>
+  <div class="col childBox">
+    <app-child
+      [boxColor]="'red'"
+      [placeholderText]="'Create Admin'"
+      (inputEvent)="getAdmin($event)"
+      [removeCount]="tAdmin"
+    ></app-child>
+  </div>
+</div>

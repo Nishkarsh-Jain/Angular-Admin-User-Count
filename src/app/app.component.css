@@ -1,3 +1,50 @@
-p {
+.parentBox {
   font-family: Lato;
+  background: #fdfdfd;
+  border: 1px solid rgba(194, 187, 187, 0.966);
+  padding: 15px;
+  border-radius: 5px;
+  width: 70%;
+  margin: 10px;
+}
+
+.parentBox h2 {
+  color: rgb(21, 170, 7);
+  font-size: 42px;
+  margin: 0;
+  padding: 0;
+}
+
+.parentBox table {
+  font-size: 20px;
+}
+
+.parentBox table th {
+  background: #fdfdfd;
+}
+
+table tr th {
+  padding: 10px 20px;
+}
+
+table tr td {
+  padding: 4px 20px;
+}
+
+.rmv_link {
+  color: red;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.childBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  font-family: Lato;
+  border-radius: 5px;
+  width: 80%;
 }

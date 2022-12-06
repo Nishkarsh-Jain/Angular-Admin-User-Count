@@ -1,0 +1,42 @@
+.child {
+  font-family: Lato;
+  background: #f0ecec;
+  border: 1px solid rgba(194, 187, 187, 0.966);
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+input {
+  background: #fff;
+  border: 1px solid #c5a2a2;
+  font-size: 10px;
+  display: block;
+  width: 80%;
+  padding: 10px 12px;
+}
+
+button {
+  background: rgb(162, 209, 73);
+  font-size: 15px;
+  border-radius: 5px;
+  color: black;
+  padding: 6px 15px;
+  border: 0;
+  margin: 15px auto;
+}
+
+.count {
+  text-align: left;
+}
+
+.redBox {
+  background: #f0c3c3;
+  border: 1px solid red;
+}
+
+.greenBox {
+  background: #cadbb3;
+  border: 1px solid rgb(162, 209, 73);
+}

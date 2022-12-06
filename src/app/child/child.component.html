@@ -1,0 +1,10 @@
+<div
+  class="child"
+  [ngClass]="{ greenBox: boxColor == 'green', redBox: boxColor == 'red' }"
+>
+  <input type="text" #input placeholder="{{ placeholderText }}" />
+  <button (click)="onCreate(input)">Create</button>
+  <div class="count" *ngIf="tcount - removeCount">
+    <strong>Total Count: {{ tcount - removeCount }}</strong>
+  </div>
+</div>
